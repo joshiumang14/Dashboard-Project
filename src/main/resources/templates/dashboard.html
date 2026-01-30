@@ -9,19 +9,48 @@
 <div class="container">
 
     <h1>Internship Dashboard</h1>
+    <p class="subtitle">
+        Admin panel for user management and data visualization
+    </p>
 
-    <div class="form-box">
-        <h3>Add User</h3>
+    <!-- TOP SECTION -->
+    <div class="top-section">
 
-        <input type="text" id="nameInput" placeholder="Name">
-        <input type="text" id="roleInput" placeholder="Role">
-        <input type="text" id="cityInput" placeholder="City">
-        <input type="number" id="scoreInput" placeholder="Score">
+        <!-- FORM -->
+        <div class="form-box">
+            <h3>Add User</h3>
 
-        <button onclick="addUser()">Add User</button>
+            <input type="text" id="nameInput" placeholder="Name">
+            <input type="text" id="roleInput" placeholder="Role">
+            <input type="text" id="cityInput" placeholder="City">
+            <input type="number" id="scoreInput" placeholder="Score">
+
+            <button onclick="addUser()">Add User</button>
+        </div>
+
+        <!-- FILL PANEL -->
+        <div class="fill-panel">
+            <h3>System Overview</h3>
+
+            <p class="overview-text">
+                This dashboard provides real-time visualization of user data, performance metrics,
+                and city distribution using a Spring Boot backend and MySQL database.
+            </p>
+
+            <div class="overview-grid">
+                <div><strong>Module:</strong> User Management</div>
+                <div><strong>Backend:</strong> Spring Boot</div>
+                <div><strong>Database:</strong> MySQL</div>
+                <div><strong>Architecture:</strong> MVC + REST</div>
+                <div><strong>API Type:</strong> RESTful</div>
+                <div><strong>UI Type:</strong> Admin Dashboard</div>
+            </div>
+        </div>
+
     </div>
 
-    <div class="kpi-container">
+    <!-- KPI SECTION -->
+    <div class="kpi-container full-width">
         <div class="kpi-card">
             <h3>Total Users</h3>
             <p id="totalUsers">0</p>
@@ -38,7 +67,8 @@
         </div>
     </div>
 
-    <div class="table-box">
+    <!-- TABLE SECTION -->
+    <div class="table-box full-width">
         <input type="text" id="searchInput" placeholder="Search user">
 
         <table>
