@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Internship Dashboard</h1>
+
+    <div class="form-box">
+        <h3>Add User</h3>
+
+        <input type="text" id="nameInput" placeholder="Name">
+        <input type="text" id="roleInput" placeholder="Role">
+        <input type="text" id="cityInput" placeholder="City">
+        <input type="number" id="scoreInput" placeholder="Score">
+
+        <button onclick="addUser()">Add User</button>
+    </div>
+
+    <div class="kpi-container">
+        <div class="kpi-card">
+            <h3>Total Users</h3>
+            <p id="totalUsers">0</p>
+        </div>
+
+        <div class="kpi-card">
+            <h3>Average Score</h3>
+            <p id="avgScore">0</p>
+        </div>
+
+        <div class="kpi-card">
+            <h3>Total Cities</h3>
+            <p id="totalCities">0</p>
+        </div>
+    </div>
+
+    <div class="table-box">
+        <input type="text" id="searchInput" placeholder="Search user">
+
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>City</th>
+                <th>Score</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>

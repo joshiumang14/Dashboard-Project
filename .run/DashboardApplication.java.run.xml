@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="DashboardApplication.java" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.project.dashboard.DashboardApplication" />
+    <module name="Dashboard" />
+    <option name="PROGRAM_PARAMETERS" value="$MAVEN_REPOSITORY$" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
